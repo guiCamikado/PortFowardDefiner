@@ -4,7 +4,6 @@ help(miniupnpc.UPnP)
 class UpnpcTools:
     upnp = miniupnpc.UPnP()
 
-
 # WIP não da para testar isso aqui no momento! testar em casa
     @classmethod
     def upnpcDiscover(cls):
