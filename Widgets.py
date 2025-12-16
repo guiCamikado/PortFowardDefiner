@@ -9,11 +9,11 @@ class Widget(QWidget):
         super().__init__()
 
         self.setWindowTitle("Port Setter")
-        self.resize(900, 600)
+        self.resize(1980, 1080) #WIP Configurar isso para pegar o tamanho do monitor do usuário
 
         layout = QVBoxLayout(self)
 
-        self.view = QWebEngineView()
+        self.view = QWebEngineView() # Permite integração de html
         path = os.path.abspath("front/index.html")
         self.view.load(QUrl.fromLocalFile(path))
 
