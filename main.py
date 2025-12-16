@@ -1,18 +1,10 @@
-from tkinter import *
-from tkinter import ttk
-import miniupnpc
-root = Tk()
-frm = ttk.Frame(root, padding=10)
-frm.grid()
+import sys
+from PySide6.QtWidgets import QApplication
+from Widgets import Widget
 
-# ln_1
-ttk.Label(frm, text="Port:").grid(column=0, row=0)
-ttk.Entry(frm).grid(column=1,row=0)
-ttk.Button(frm, text="SetPort").grid(column=2, row=0)
-# ttk.Button(frm, text="Quit", command=root.destroy).grid(column=1, row=0)
+app = QApplication(sys.argv)
 
-upnp = miniupnpc.UPnP()
-print(upnp)
+widget = Widget()
+widget.show()
 
-
-root.mainloop()
+sys.exit(app.exec())
