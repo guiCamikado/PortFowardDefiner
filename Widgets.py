@@ -10,7 +10,8 @@ class Widget(QWidget):
 
         self.setWindowTitle("UPLink")
         self.resize(1980, 1080) #WIP Configurar isso para pegar o tamanho do monitor do usuário
-
+        # self.setWindowFlags(Qt.FramelessWindowHint | Qt.Window) # Remove a barra - [] X
+        
         layout = QVBoxLayout(self)
 
         self.view = QWebEngineView() # Permite integração de html
