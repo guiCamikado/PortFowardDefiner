@@ -20,7 +20,7 @@ class Widget(QWidget):
 
         layout.addWidget(self.view)
 
-        self.is_fullscreen = False  # 👈 controla o estado
+        self.is_fullscreen = False  # controla o estado
 
         layout = QVBoxLayout(self)
 
