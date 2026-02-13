@@ -6,7 +6,7 @@ app = QApplication(sys.argv)
 app.setStyle(QStyleFactory.create("Windows"))
 
 widget = Widget()
-widget.showMaximized()   # 👈 recomendado
-# widget.showFullScreen()  # se quiser fullscreen real
+widget.showMaximized()
+# widget.showFullScreen()  # fullscreen real
 
 sys.exit(app.exec())
